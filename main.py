@@ -10,13 +10,13 @@ def run_module(module_name):
 if __name__ == "__main__":
     print("=== Loan Credit Analysis ===")
 
-    # Step 1: Setup database
+    # Setup database
     run_module("loan_credit_analysis/scripts/setup_db.py")
 
-    # Step 2: Populate database with synthetic data
+    # Populate database with synthetic data
     run_module("loan_credit_analysis/scripts/populate_db.py")
 
-    # Step 3: Run analysis and plots
+    # Run analysis and plots
     run_module("loan_credit_analysis/scripts/analysis.py")
 
     print("\n=== Complete! ===")
