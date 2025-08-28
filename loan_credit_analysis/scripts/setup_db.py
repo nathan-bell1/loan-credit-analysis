@@ -1,7 +1,7 @@
 import sqlite3
 from loan_credit_analysis.config import DB_PATH
 
-def create_database():
+def make_database():
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
@@ -51,4 +51,4 @@ def create_database():
     print(f"Database created at {DB_PATH}")
 
 if __name__ == "__main__":
-    create_database()
+    make_database()
