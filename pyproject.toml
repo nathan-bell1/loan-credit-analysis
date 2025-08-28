@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loan-credit-analysis"
+version = "0.1.0"
+description = "Loan credit risk analysis with SQLite and Python."
+authors = [
+    { name = "Nathan Bell" }
+]
+dependencies = [
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "Faker>=23.3.0"
+]
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["loan_credit_analysis*"]
