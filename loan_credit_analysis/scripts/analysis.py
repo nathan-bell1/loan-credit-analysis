@@ -49,7 +49,7 @@ def run_analysis():
     labels = ['Poor', 'Fair', 'Good', 'Very Good', 'Excellent']
     loan_df['credit_category'] = pd.cut(loan_df['credit_score'], bins=bins, labels=labels)
 
-    # Group dataframe categories and average the interest rate for each category
+    # Group and average dataframe categories
     avg_interest = loan_df.groupby('credit_category', observed=False)['interest_rate'].mean().reset_index()
     print(avg_interest)
 
